@@ -7,6 +7,12 @@ There are two files:
   * `.catalog` is a symbolic link to sample.yaml
   * `sample.yaml` is a very basic Heat template
 
+The steps are simple:
+  1 create the actual file (in my case, `sample.yaml`)
+  2 `ln -s sample.yaml .catalog`
+  3 git add .
+  4 git commit
+
 The symbolic link doesn't quite just work. However, if you:
 
 ```shell
