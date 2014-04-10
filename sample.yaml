@@ -1,0 +1,9 @@
+heat_template_version: 2013-05-23
+
+resources:
+  compute_instance: # You can name this whatever you prefer
+    type: "OS::Nova::Server"
+    properties:
+      flavor: 1GB Standard Instance
+      image: CentOS 6.5
+      name: Single Compute Instance
