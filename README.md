@@ -8,10 +8,11 @@ There are two files:
   * `sample.yaml` is a very basic Heat template
 
 The steps are simple:
-  1 create the actual file (in my case, `sample.yaml`)
-  2 `ln -s sample.yaml .catalog`
-  3 git add .
-  4 git commit
+
+  1. create the actual file (in my case, `sample.yaml`)
+  2. `ln -s <source_file> <target_file>` (in my case, `sample.yaml` and `.catalog` respectively)
+  3. git add .
+  4. git commit
 
 The symbolic link doesn't quite just work. However, if you:
 
