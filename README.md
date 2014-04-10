@@ -9,7 +9,11 @@ There are two files:
 
 The symbolic link doesn't quite just work. However, if you:
 
-`curl -L https://github.com/Pablosan/aliastest/raw/master/.catalog`
+```shell
+
+curl -L https://github.com/Pablosan/aliastest/raw/master/.catalog
+
+```
 
 _note the `-L`. This http request results in a single redirect._
 
@@ -22,7 +26,11 @@ So, we now know the name of the file `.catalog` points to and we can retrieve th
 
 This is fugly, but you could do this in a single command:
 
-`curl -L https://github.com/Pablosan/aliastest/raw/master/\`curl -L https://github.com/Pablosan/aliastest/raw/master/.catalog\``
+```shell
+
+curl -L https://github.com/Pablosan/aliastest/raw/master/`curl -L https://github.com/Pablosan/aliastest/raw/master/.catalog`
+
+```
 
 The response from this command is the actual template:
 
